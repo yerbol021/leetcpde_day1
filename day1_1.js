@@ -1,4 +1,7 @@
-const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4, 5, 5];
+const nums = [0, 12, 0, 1, 1, 1, 2, 2, 3, 3, 4, 5, 5];
+
+let sorted_nums = nums.sort((a, b) => a - b);
+console.log("sorted nums:", sorted_nums);
 
 if (nums.length === 0) {
   console.log(0);
@@ -11,6 +14,6 @@ if (nums.length === 0) {
       k++;
     }
   }
-  console.log(k);
-  console.log(nums.slice(0, k));
+  console.log("number of unique values:", k);
+  console.log("sorted unnique values:", nums.slice(0, k));
 }
